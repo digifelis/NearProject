@@ -1,0 +1,22 @@
+{
+  "name": "kunduz",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "node tests",
+    "asbuild:untouched": "asc assembly/index.ts --target debug",
+    "asbuild:optimized": "asc assembly/index.ts --target release",
+    "asbuild": "npm run asbuild:untouched && npm run asbuild:optimized",
+    "gonder": "npm run asbuild:untouched && npm run asbuild:optimized && near dev-deploy ./build/optimized.wasm"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "near-sdk-as": "^3.2.3",
+    "@assemblyscript/loader": "^0.19.23"
+  },
+  "devDependencies": {
+    "assemblyscript": "^0.19.23"
+  }
+}
