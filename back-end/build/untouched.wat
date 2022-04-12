@@ -1,7 +1,7 @@
 (module
  (type $i32_i32_=>_i32 (func (param i32 i32) (result i32)))
- (type $i32_i32_=>_none (func (param i32 i32)))
  (type $i32_=>_i32 (func (param i32) (result i32)))
+ (type $i32_i32_=>_none (func (param i32 i32)))
  (type $i32_i32_i32_=>_i32 (func (param i32 i32 i32) (result i32)))
  (type $none_=>_i32 (func (result i32)))
  (type $i32_i32_i32_=>_none (func (param i32 i32 i32)))
@@ -89,8 +89,8 @@
  (global $~lib/builtins/u32.MAX_VALUE i32 (i32.const -1))
  (global $~lib/number/U32.MAX_VALUE i32 (i32.const -1))
  (global $~lib/builtins/i32.MAX_VALUE i32 (i32.const 2147483647))
- (global $~lib/rt/__rtti_base i32 (i32.const 10592))
- (global $~lib/memory/__heap_base i32 (i32.const 10924))
+ (global $~lib/rt/__rtti_base i32 (i32.const 10560))
+ (global $~lib/memory/__heap_base i32 (i32.const 10892))
  (memory $0 1)
  (data (i32.const 12) "\1c\00\00\00\00\00\00\00\00\00\00\00\01\00\00\00\04\00\00\00:\00:\00\00\00\00\00\00\00\00\00")
  (data (i32.const 44) "\1c\00\00\00\00\00\00\00\00\00\00\00\01\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00")
@@ -102,7 +102,7 @@
  (data (i32.const 300) "\1c\00\00\00\00\00\00\00\00\00\00\00\01\00\00\00\08\00\00\00:\00l\00e\00n\00\00\00\00\00")
  (data (i32.const 332) ",\00\00\00\00\00\00\00\00\00\00\00\01\00\00\00\0e\00\00\00_\00v\00e\00c\00t\00o\00r\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00")
  (data (i32.const 380) "\1c\00\00\00\00\00\00\00\00\00\00\00\01\00\00\00\02\00\00\00c\00\00\00\00\00\00\00\00\00\00\00")
- (data (i32.const 412) "\\\00\00\00\00\00\00\00\00\00\00\00\01\00\00\00@\00\00\00d\00e\00v\00-\001\006\004\009\005\009\003\004\002\001\002\005\000\00-\006\004\000\008\000\009\009\001\003\000\009\000\002\009\00\00\00\00\00\00\00\00\00\00\00\00\00")
+ (data (i32.const 412) "\\\00\00\00\00\00\00\00\00\00\00\00\01\00\00\00@\00\00\00d\00e\00v\00-\001\006\004\009\007\002\000\004\002\005\000\008\001\00-\009\000\009\004\001\005\006\007\000\006\008\001\001\005\00\00\00\00\00\00\00\00\00\00\00\00\00")
  (data (i32.const 508) "L\00\00\00\00\00\00\00\00\00\00\00\01\00\00\002\00\00\001\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\00\00\00\00\00\00\00\00\00\00\00")
  (data (i32.const 588) ",\00\00\00\00\00\00\00\00\00\00\00\01\00\00\00\1a\00\00\00I\00n\00v\00a\00l\00i\00d\00 \00r\00a\00d\00i\00x\00\00\00")
  (data (i32.const 636) "L\00\00\00\00\00\00\00\00\00\00\00\01\00\00\00.\00\00\00~\00l\00i\00b\00/\00a\00s\00-\00b\00i\00g\00n\00u\00m\00/\00u\00t\00i\00l\00s\00.\00t\00s\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00")
@@ -228,17 +228,16 @@
  (data (i32.const 9660) ",\00\00\00\00\00\00\00\00\00\00\00\01\00\00\00\18\00\00\00a\00n\00s\00w\00e\00r\00 \00e\00x\00i\00s\00t\00\00\00\00\00")
  (data (i32.const 9708) "<\00\00\00\00\00\00\00\00\00\00\00\01\00\00\00 \00\00\00a\00n\00s\00w\00e\00r\00_\00f\00i\00l\00e\00_\00h\00a\00s\00h\00\00\00\00\00\00\00\00\00\00\00\00\00")
  (data (i32.const 9772) ",\00\00\00\00\00\00\00\00\00\00\00\01\00\00\00\18\00\00\00a\00n\00s\00w\00e\00r\00_\00o\00w\00n\00e\00r\00\00\00\00\00")
- (data (i32.const 9820) "\1c\00\00\00\00\00\00\00\00\00\00\00\01\00\00\00\04\00\00\00i\00d\00\00\00\00\00\00\00\00\00")
- (data (i32.const 9852) "L\00\00\00\00\00\00\00\00\00\00\00\01\00\00\00<\00\00\00a\00n\00s\00w\00e\00r\00 \00p\00a\00r\00a\00m\00e\00t\00r\00e\00 \00m\00a\00y\00 \00n\00o\00t\00 \00b\00l\00a\00n\00k\00")
- (data (i32.const 9932) "<\00\00\00\00\00\00\00\00\00\00\00\01\00\00\00 \00\00\00a\00n\00s\00w\00e\00r\00 \00n\00o\00t\00 \00f\00o\00u\00n\00d\00\00\00\00\00\00\00\00\00\00\00\00\00")
- (data (i32.const 9996) ",\00\00\00\00\00\00\00\00\00\00\00\01\00\00\00\0e\00\00\00A\00n\00s\00w\00e\00r\00s\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00")
- (data (i32.const 10044) ",\00\00\00\00\00\00\00\00\00\00\00\01\00\00\00\14\00\00\00_\00a\00n\00s\00w\00e\00r\00_\00i\00d\00\00\00\00\00\00\00\00\00")
- (data (i32.const 10092) "l\00\00\00\00\00\00\00\00\00\00\00\01\00\00\00R\00\00\00y\00o\00u\00 \00c\00a\00n\00 \00n\00o\00t\00 \00d\00e\00l\00e\00t\00e\00 \00o\00t\00h\00e\00r\00 \00p\00e\00o\00p\00l\00e\00\'\00s\00 \00a\00n\00s\00w\00e\00r\00s\00\00\00\00\00\00\00\00\00\00\00")
- (data (i32.const 10204) "|\00\00\00\00\00\00\00\00\00\00\00\01\00\00\00^\00\00\00y\00o\00u\00 \00c\00a\00n\00t\00 \00c\00h\00a\00n\00g\00e\00 \00q\00u\00e\00s\00t\00i\00o\00n\00 \00a\00f\00t\00e\00r\00 \00a\00n\00s\00w\00e\00r\00 \00c\00o\00n\00f\00i\00r\00m\00e\00d\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00")
- (data (i32.const 10332) "L\00\00\00\00\00\00\00\00\00\00\00\01\00\00\008\00\00\00q\00u\00e\00s\00t\00i\00o\00n\00 \00i\00d\00 \00m\00a\00y\00 \00n\00o\00t\00 \00b\00e\00 \00b\00l\00a\00n\00k\00\00\00\00\00")
- (data (i32.const 10412) "L\00\00\00\00\00\00\00\00\00\00\00\01\00\00\00.\00\00\00a\00n\00s\00w\00e\00r\00 \00m\00a\00y\00 \00n\00o\00t\00 \00b\00e\00 \00b\00l\00a\00n\00k\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00")
- (data (i32.const 10492) "\\\00\00\00\00\00\00\00\00\00\00\00\01\00\00\00L\00\00\00O\00n\00l\00y\00 \00q\00u\00e\00s\00t\00i\00o\00n\00 \00o\00w\00n\00e\00r\00 \00c\00a\00n\00 \00c\00o\00n\00f\00i\00r\00m\00 \00a\00n\00s\00w\00e\00r\00")
- (data (i32.const 10592) ")\00\00\00 \00\00\00\00\00\00\00 \00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00A\00\00\00\02\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00 \00\00\00\0c\00\00\00 \00\00\00\00\00\00\00 \00\00\00\00\00\00\00 \00\00\00\0d\00\00\00 \00\00\00\00\00\00\00 \00\00\00\0f\00\00\00 \00\00\00\12\00\00\00 \00\00\00\00\00\00\00B\00\00\00\00\00\00\00 \00\00\00\00\00\00\00 \00\00\00\00\00\00\00\00\00\00\00\17\00\00\00 \00\00\00\00\00\00\00\02A\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\15\00\00\00\10A\82\00\00\00\00\00\00\00\00\00\15\00\00\00\02A\00\00\00\00\00\00\00\00\00\00\15\00\00\00 \00\00\00\15\00\00\00 \00\00\00\"\00\00\00 \00\00\00\15\00\00\00 \00\00\00\15\00\00\00 \00\00\00\15\00\00\00 \00\00\00\00\00\00\00\00\00\00\00\'\00\00\00\00\00\00\00\00\00\00\00\02\t\00\00\00\00\00\00")
+ (data (i32.const 9820) ",\00\00\00\00\00\00\00\00\00\00\00\01\00\00\00\14\00\00\00_\00a\00n\00s\00w\00e\00r\00_\00i\00d\00\00\00\00\00\00\00\00\00")
+ (data (i32.const 9868) "L\00\00\00\00\00\00\00\00\00\00\00\01\00\00\00<\00\00\00a\00n\00s\00w\00e\00r\00 \00p\00a\00r\00a\00m\00e\00t\00r\00e\00 \00m\00a\00y\00 \00n\00o\00t\00 \00b\00l\00a\00n\00k\00")
+ (data (i32.const 9948) "<\00\00\00\00\00\00\00\00\00\00\00\01\00\00\00 \00\00\00a\00n\00s\00w\00e\00r\00 \00n\00o\00t\00 \00f\00o\00u\00n\00d\00\00\00\00\00\00\00\00\00\00\00\00\00")
+ (data (i32.const 10012) ",\00\00\00\00\00\00\00\00\00\00\00\01\00\00\00\0e\00\00\00A\00n\00s\00w\00e\00r\00s\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00")
+ (data (i32.const 10060) "l\00\00\00\00\00\00\00\00\00\00\00\01\00\00\00R\00\00\00y\00o\00u\00 \00c\00a\00n\00 \00n\00o\00t\00 \00d\00e\00l\00e\00t\00e\00 \00o\00t\00h\00e\00r\00 \00p\00e\00o\00p\00l\00e\00\'\00s\00 \00a\00n\00s\00w\00e\00r\00s\00\00\00\00\00\00\00\00\00\00\00")
+ (data (i32.const 10172) "|\00\00\00\00\00\00\00\00\00\00\00\01\00\00\00^\00\00\00y\00o\00u\00 \00c\00a\00n\00t\00 \00c\00h\00a\00n\00g\00e\00 \00q\00u\00e\00s\00t\00i\00o\00n\00 \00a\00f\00t\00e\00r\00 \00a\00n\00s\00w\00e\00r\00 \00c\00o\00n\00f\00i\00r\00m\00e\00d\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00")
+ (data (i32.const 10300) "L\00\00\00\00\00\00\00\00\00\00\00\01\00\00\008\00\00\00q\00u\00e\00s\00t\00i\00o\00n\00 \00i\00d\00 \00m\00a\00y\00 \00n\00o\00t\00 \00b\00e\00 \00b\00l\00a\00n\00k\00\00\00\00\00")
+ (data (i32.const 10380) "L\00\00\00\00\00\00\00\00\00\00\00\01\00\00\00.\00\00\00a\00n\00s\00w\00e\00r\00 \00m\00a\00y\00 \00n\00o\00t\00 \00b\00e\00 \00b\00l\00a\00n\00k\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00")
+ (data (i32.const 10460) "\\\00\00\00\00\00\00\00\00\00\00\00\01\00\00\00L\00\00\00O\00n\00l\00y\00 \00q\00u\00e\00s\00t\00i\00o\00n\00 \00o\00w\00n\00e\00r\00 \00c\00a\00n\00 \00c\00o\00n\00f\00i\00r\00m\00 \00a\00n\00s\00w\00e\00r\00")
+ (data (i32.const 10560) ")\00\00\00 \00\00\00\00\00\00\00 \00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00A\00\00\00\02\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00 \00\00\00\0c\00\00\00 \00\00\00\00\00\00\00 \00\00\00\00\00\00\00 \00\00\00\0d\00\00\00 \00\00\00\00\00\00\00 \00\00\00\0f\00\00\00 \00\00\00\12\00\00\00 \00\00\00\00\00\00\00B\00\00\00\00\00\00\00 \00\00\00\00\00\00\00 \00\00\00\00\00\00\00\00\00\00\00\17\00\00\00 \00\00\00\00\00\00\00\02A\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\15\00\00\00\10A\82\00\00\00\00\00\00\00\00\00\15\00\00\00\02A\00\00\00\00\00\00\00\00\00\00\15\00\00\00 \00\00\00\15\00\00\00 \00\00\00\"\00\00\00 \00\00\00\15\00\00\00 \00\00\00\15\00\00\00 \00\00\00\15\00\00\00 \00\00\00\00\00\00\00\00\00\00\00\'\00\00\00\00\00\00\00\00\00\00\00\02\t\00\00\00\00\00\00")
  (table $0 1 funcref)
  (elem $0 (i32.const 1))
  (export "createQuestion" (func $assembly/index/__wrapper_createQuestion))
@@ -10299,7 +10298,7 @@
   if
    i32.const 5456
    i32.const 5088
-   i32.const 222
+   i32.const 210
    i32.const 5
    call $~lib/builtins/abort
    unreachable
@@ -10339,7 +10338,7 @@
   if
    i32.const 5696
    i32.const 5088
-   i32.const 223
+   i32.const 211
    i32.const 5
    call $~lib/builtins/abort
    unreachable
@@ -14521,7 +14520,7 @@
   if
    i32.const 8448
    i32.const 5088
-   i32.const 161
+   i32.const 149
    i32.const 5
    call $~lib/builtins/abort
    unreachable
@@ -14533,7 +14532,7 @@
   if
    i32.const 8512
    i32.const 5088
-   i32.const 162
+   i32.const 150
    i32.const 5
    call $~lib/builtins/abort
    unreachable
@@ -14550,7 +14549,7 @@
   if
    i32.const 8624
    i32.const 5088
-   i32.const 164
+   i32.const 152
    i32.const 5
    call $~lib/builtins/abort
    unreachable
@@ -14563,7 +14562,7 @@
   if
    i32.const 8736
    i32.const 5088
-   i32.const 165
+   i32.const 153
    i32.const 5
    call $~lib/builtins/abort
    unreachable
@@ -14605,7 +14604,7 @@
   if
    i32.const 8448
    i32.const 5088
-   i32.const 170
+   i32.const 158
    i32.const 5
    call $~lib/builtins/abort
    unreachable
@@ -14617,7 +14616,7 @@
   if
    i32.const 8512
    i32.const 5088
-   i32.const 171
+   i32.const 159
    i32.const 5
    call $~lib/builtins/abort
    unreachable
@@ -14905,7 +14904,7 @@
   local.get $3
   call $~lib/near-sdk-core/collections/persistentMap/PersistentMap<i32,assembly/index/Questions>#set
  )
- (func $assembly/index/Contract#addAnswer (param $0 i32) (param $1 i32) (param $2 i32)
+ (func $assembly/index/Contract#addAnswer (param $0 i32) (param $1 i32) (param $2 i32) (result i32)
   (local $3 i32)
   (local $4 i32)
   (local $5 i32)
@@ -14916,7 +14915,7 @@
   if
    i32.const 9472
    i32.const 5088
-   i32.const 175
+   i32.const 163
    i32.const 5
    call $~lib/builtins/abort
    unreachable
@@ -14929,7 +14928,7 @@
   if
    i32.const 9552
    i32.const 5088
-   i32.const 176
+   i32.const 164
    i32.const 5
    call $~lib/builtins/abort
    unreachable
@@ -14957,7 +14956,7 @@
   if
    i32.const 9680
    i32.const 5088
-   i32.const 179
+   i32.const 167
    i32.const 5
    call $~lib/builtins/abort
    unreachable
@@ -14978,15 +14977,73 @@
   local.get $0
   local.get $1
   call $assembly/index/Contract#updateQuestionAnswerCount
+  local.get $4
  )
- (func $assembly/index/addAnswer (param $0 i32) (param $1 i32)
+ (func $assembly/index/addAnswer (param $0 i32) (param $1 i32) (result i32)
+  (local $2 i32)
   global.get $assembly/index/__contract
   local.get $0
   local.get $1
   call $assembly/index/Contract#addAnswer
+  local.set $2
+  local.get $2
+ )
+ (func $~lib/near-sdk-bindgen/index/encode<~lib/string/String,~lib/typedarray/Uint8Array> (param $0 i32) (param $1 i32) (param $2 i32) (result i32)
+  (local $3 i32)
+  i32.const 0
+  drop
+  i32.const 0
+  drop
+  i32.const 0
+  drop
+  i32.const 1
+  drop
+  local.get $0
+  call $~lib/near-sdk-bindgen/index/isNull<~lib/string/String>
+  if
+   local.get $2
+   local.get $1
+   call $~lib/assemblyscript-json/encoder/JSONEncoder#setNull
+  else
+   local.get $2
+   local.get $1
+   local.get $0
+   call $~lib/assemblyscript-json/encoder/JSONEncoder#setString
+  end
+  i32.const 1
+  drop
+  local.get $2
+  call $~lib/assemblyscript-json/encoder/JSONEncoder#serialize
+  return
+ )
+ (func $~lib/near-sdk-bindgen/index/encode<~lib/string/String,~lib/typedarray/Uint8Array>@varargs (param $0 i32) (param $1 i32) (param $2 i32) (result i32)
+  block $2of2
+   block $1of2
+    block $0of2
+     block $outOfRange
+      global.get $~argumentsLength
+      i32.const 1
+      i32.sub
+      br_table $0of2 $1of2 $2of2 $outOfRange
+     end
+     unreachable
+    end
+    i32.const 64
+    local.set $1
+   end
+   i32.const 0
+   call $~lib/near-sdk-bindgen/index/JSONEncoder#constructor
+   local.set $2
+  end
+  local.get $0
+  local.get $1
+  local.get $2
+  call $~lib/near-sdk-bindgen/index/encode<~lib/string/String,~lib/typedarray/Uint8Array>
  )
  (func $assembly/index/__wrapper_addAnswer
   (local $0 i32)
+  (local $1 i32)
+  (local $2 i32)
   call $~lib/near-sdk-bindgen/index/getInput
   local.set $0
   local.get $0
@@ -15012,6 +15069,21 @@
    call $~lib/near-sdk-bindgen/index/requireParameter<~lib/string/String>
   end
   call $assembly/index/addAnswer
+  local.set $1
+  local.get $1
+  i32.const 64
+  i32.const 1
+  global.set $~argumentsLength
+  i32.const 0
+  call $~lib/near-sdk-bindgen/index/encode<~lib/string/String,~lib/typedarray/Uint8Array>@varargs
+  local.set $2
+  local.get $2
+  i32.load offset=8
+  i64.extend_i32_s
+  local.get $2
+  i32.load offset=4
+  i64.extend_i32_u
+  call $~lib/near-sdk-bindgen/index/value_return
  )
  (func $~lib/near-sdk-bindgen/index/isReallyNullable<assembly/index/Answers> (result i32)
   i32.const 1
@@ -15131,7 +15203,7 @@
      return
     else
      i32.const 4048
-     i32.const 10016
+     i32.const 10032
      call $~lib/string/String.__concat
      i32.const 4128
      call $~lib/string/String.__concat
@@ -15174,7 +15246,7 @@
     call $~lib/string/String.__concat
     i32.const 4224
     call $~lib/string/String.__concat
-    i32.const 10016
+    i32.const 10032
     call $~lib/string/String.__concat
     i32.const 4272
     call $~lib/string/String.__concat
@@ -15224,7 +15296,7 @@
    call $~lib/string/String.__concat
    i32.const 4224
    call $~lib/string/String.__concat
-   i32.const 10016
+   i32.const 10032
    call $~lib/string/String.__concat
    i32.const 4400
    call $~lib/string/String.__concat
@@ -15326,9 +15398,9 @@
   i32.gt_s
   i32.eqz
   if
-   i32.const 9872
+   i32.const 9888
    i32.const 5088
-   i32.const 187
+   i32.const 176
    i32.const 5
    call $~lib/builtins/abort
    unreachable
@@ -15338,9 +15410,9 @@
   call $~lib/near-sdk-core/collections/persistentMap/PersistentMap<~lib/string/String,assembly/index/Answers>#contains
   i32.eqz
   if
-   i32.const 9952
+   i32.const 9968
    i32.const 5088
-   i32.const 188
+   i32.const 177
    i32.const 5
    call $~lib/builtins/abort
    unreachable
@@ -16150,67 +16222,6 @@
   local.get $1
   call $~lib/util/string/strtol<f64>
  )
- (func $assembly/index/Contract#updateQuestionAnswerCountReduce (param $0 i32) (param $1 i32)
-  (local $2 i32)
-  (local $3 i32)
-  local.get $1
-  i32.const 0
-  i32.gt_s
-  i32.eqz
-  if
-   i32.const 8448
-   i32.const 5088
-   i32.const 149
-   i32.const 5
-   call $~lib/builtins/abort
-   unreachable
-  end
-  global.get $assembly/index/question
-  local.get $1
-  call $~lib/near-sdk-core/collections/persistentMap/PersistentMap<i32,assembly/index/Questions>#contains
-  i32.eqz
-  if
-   i32.const 8512
-   i32.const 5088
-   i32.const 150
-   i32.const 5
-   call $~lib/builtins/abort
-   unreachable
-  end
-  global.get $assembly/index/question
-  local.get $1
-  call $~lib/near-sdk-core/collections/persistentMap/PersistentMap<i32,assembly/index/Questions>#getSome
-  local.set $2
-  global.get $assembly/index/question
-  local.get $1
-  i32.const 0
-  call $assembly/index/Questions#constructor
-  local.set $3
-  local.get $3
-  local.get $2
-  i32.load
-  call $assembly/index/Questions#set:question_file_hash
-  local.get $3
-  local.get $2
-  i32.load offset=4
-  call $assembly/index/Questions#set:question_payment_amount
-  local.get $3
-  local.get $2
-  i32.load offset=8
-  call $assembly/index/Questions#set:question_owner
-  local.get $3
-  local.get $2
-  i32.load offset=12
-  i32.const 1
-  i32.sub
-  call $assembly/index/Questions#set:question_answer_count
-  local.get $3
-  local.get $2
-  i32.load offset=16
-  call $assembly/index/Questions#set:question_answer_id
-  local.get $3
-  call $~lib/near-sdk-core/collections/persistentMap/PersistentMap<i32,assembly/index/Questions>#set
- )
  (func $~lib/near-sdk-core/collections/persistentMap/PersistentMap<~lib/string/String,assembly/index/Answers>#delete (param $0 i32) (param $1 i32)
   local.get $0
   local.get $1
@@ -16229,9 +16240,9 @@
   i32.gt_s
   i32.eqz
   if
-   i32.const 9872
+   i32.const 9888
    i32.const 5088
-   i32.const 192
+   i32.const 181
    i32.const 5
    call $~lib/builtins/abort
    unreachable
@@ -16241,9 +16252,9 @@
   call $~lib/near-sdk-core/collections/persistentMap/PersistentMap<~lib/string/String,assembly/index/Answers>#contains
   i32.eqz
   if
-   i32.const 9952
+   i32.const 9968
    i32.const 5088
-   i32.const 193
+   i32.const 182
    i32.const 5
    call $~lib/builtins/abort
    unreachable
@@ -16258,9 +16269,9 @@
   call $~lib/string/String.__eq
   i32.eqz
   if
-   i32.const 10112
+   i32.const 10080
    i32.const 5088
-   i32.const 195
+   i32.const 184
    i32.const 5
    call $~lib/builtins/abort
    unreachable
@@ -16287,16 +16298,13 @@
   call $~lib/string/String.__eq
   i32.eqz
   if
-   i32.const 10224
+   i32.const 10192
    i32.const 5088
-   i32.const 199
+   i32.const 188
    i32.const 5
    call $~lib/builtins/abort
    unreachable
   end
-  local.get $0
-  local.get $4
-  call $assembly/index/Contract#updateQuestionAnswerCountReduce
   global.get $assembly/index/answer
   local.get $1
   call $~lib/near-sdk-core/collections/persistentMap/PersistentMap<~lib/string/String,assembly/index/Answers>#delete
@@ -16311,14 +16319,14 @@
   call $~lib/near-sdk-bindgen/index/getInput
   local.set $0
   local.get $0
-  i32.const 10064
+  i32.const 9840
   call $~lib/assemblyscript-json/JSON/Obj#has
   if (result i32)
    local.get $0
-   i32.const 10064
+   i32.const 9840
    call $~lib/near-sdk-bindgen/index/decode<~lib/string/String,~lib/assemblyscript-json/JSON/Obj>
   else
-   i32.const 10064
+   i32.const 9840
    call $~lib/near-sdk-bindgen/index/requireParameter<~lib/string/String>
   end
   call $assembly/index/deleteAnswer
@@ -16352,9 +16360,9 @@
   i32.gt_s
   i32.eqz
   if
-   i32.const 10352
+   i32.const 10320
    i32.const 5088
-   i32.const 204
+   i32.const 192
    i32.const 5
    call $~lib/builtins/abort
    unreachable
@@ -16365,9 +16373,9 @@
   i32.gt_s
   i32.eqz
   if
-   i32.const 10432
+   i32.const 10400
    i32.const 5088
-   i32.const 205
+   i32.const 193
    i32.const 5
    call $~lib/builtins/abort
    unreachable
@@ -16382,9 +16390,9 @@
   call $~lib/string/String.__eq
   i32.eqz
   if
-   i32.const 10512
+   i32.const 10480
    i32.const 5088
-   i32.const 207
+   i32.const 195
    i32.const 5
    call $~lib/builtins/abort
    unreachable
@@ -16395,9 +16403,9 @@
   call $~lib/string/String.__eq
   i32.eqz
   if
-   i32.const 10224
+   i32.const 10192
    i32.const 5088
-   i32.const 208
+   i32.const 196
    i32.const 5
    call $~lib/builtins/abort
    unreachable
@@ -16457,14 +16465,14 @@
    call $~lib/near-sdk-bindgen/index/requireParameter<i32>
   end
   local.get $0
-  i32.const 10064
+  i32.const 9840
   call $~lib/assemblyscript-json/JSON/Obj#has
   if (result i32)
    local.get $0
-   i32.const 10064
+   i32.const 9840
    call $~lib/near-sdk-bindgen/index/decode<~lib/string/String,~lib/assemblyscript-json/JSON/Obj>
   else
-   i32.const 10064
+   i32.const 9840
    call $~lib/near-sdk-bindgen/index/requireParameter<~lib/string/String>
   end
   call $assembly/index/confirmAnswer

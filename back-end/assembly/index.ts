@@ -48,7 +48,7 @@ export class Contract {
     assert(_question_id > 0, "Question may not blank")
     assert(question.contains(_question_id), "Question not found")
     var question_details = question.getSome(_question_id);
-    //question.delete(_question_id);
+
     question.set(_question_id, {
       question_file_hash: question_details.question_file_hash,
       question_payment_amount: question_details.question_payment_amount,
@@ -57,19 +57,7 @@ export class Contract {
       question_answer_id: question_details.question_answer_id
     });
   }
-  private updateQuestionAnswerCountReduce(_question_id: i32): void{
-    assert(_question_id > 0, "Question may not blank")
-    assert(question.contains(_question_id), "Question not found")
-    var question_details = question.getSome(_question_id);
-    //question.delete(_question_id);
-    question.set(_question_id, {
-      question_file_hash: question_details.question_file_hash,
-      question_payment_amount: question_details.question_payment_amount,
-      question_owner: question_details.question_owner,
-      question_answer_count: question_details.question_answer_count-1,
-      question_answer_id: question_details.question_answer_id
-    });
-  }
+
   deleteQuestion(_question_id: i32): void{
     assert(_question_id > 0, "Question may not blank");
     assert(question.contains(_question_id), "Question not found");
@@ -85,7 +73,7 @@ export class Contract {
     return question.getSome(_question_id);  
   }
   /* answer function */
-  addAnswer(_answer_question_id: i32, _answer_file_hash: string): void {
+  addAnswer(_answer_question_id: i32, _answer_file_hash: string): string {
     assert(_answer_question_id > 0, "Answer number may not be blank")
     assert(_answer_file_hash.length > 0, "Answer file hash may not be blank")
 
@@ -99,11 +87,12 @@ export class Contract {
       answer_owner: Context.sender
     });
     this.updateQuestionAnswerCount(_answer_question_id);
+    return _answer_question_key
   }
-  getAnswer(id: string): Answers {
-    assert(id.length > 0, "answer parametre may not blank")
-    assert(answer.contains(id), "answer not found")
-    return answer.getSome(id);  
+  getAnswer(_answer_id: string): Answers {
+    assert(_answer_id.length > 0, "answer parametre may not blank")
+    assert(answer.contains(_answer_id), "answer not found")
+    return answer.getSome(_answer_id);  
   }
   deleteAnswer(_answer_id: string): void{
     assert(_answer_id.length > 0, "answer parametre may not blank")
@@ -116,7 +105,6 @@ export class Contract {
     var question_details = question.getSome(_question_id);
     assert(question_details.question_answer_id == "", "you cant change question after answer confirmed");
 
-    this.updateQuestionAnswerCountReduce(_question_id);
     answer.delete(_answer_id);
   }
 
@@ -177,20 +165,6 @@ export class Contract {
   private UnAnswerdeleteElement(el:i32):void{
      arr.delete(el)
   }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 }
 
