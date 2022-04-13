@@ -6,7 +6,31 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"
             integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
             <script src="https://cdn.jsdelivr.net/npm/near-api-js@0.41.0/dist/near-api-js.min.js"></script>
-            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+            
+
+            <style>
+                .loader {
+                  border: 16px solid #f3f3f3;
+                  border-radius: 50%;
+                  border-top: 16px solid #3498db;
+                  width: 20px;
+                  height: 20px;
+                  -webkit-animation: spin 2s linear infinite; /* Safari */
+                  animation: spin 2s linear infinite;
+                }
+                
+                /* Safari */
+                @-webkit-keyframes spin {
+                  0% { -webkit-transform: rotate(0deg); }
+                  100% { -webkit-transform: rotate(360deg); }
+                }
+                
+                @keyframes spin {
+                  0% { transform: rotate(0deg); }
+                  100% { transform: rotate(360deg); }
+                }
+                </style>
+            
             
   </head>
   <body>
@@ -25,7 +49,7 @@
               <li class="nav-item">
                 <a class="nav-link" href="question_list.html">Question List</a>
               </li>
-
+              
               <li>
                 <button type="button" id="connect" class="btn btn-primary btn-lg"> Connect </button>
               </li>
@@ -37,38 +61,54 @@
       </nav>
     
       
-      <div class="container">
+      <div class=" h-100 container">
         <div class="row">
-          <div class="col">
-            <div class="card" style="width: 54rem;">
-              <div class="card-body">
-                <input type="file" id="file" name="file" aria-label="Default select example" class="form-control">
-                <input type="text" id="amount" name="amount" aria-label="Default select example" class="form-control" value="100000000000000000000000">
-              </div>
 
-               <ul class="list-group list-group-flush">
+
+            <table class="table">
+                <thead>
+                  <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Question İmage</th>
+                    <th scope="col">Question Number</th>
+                    <th scope="col">Give Answer</th>
+                  </tr>
+                </thead>
+                <tbody id="gecici">
+
+
+
                   
-                  <li class="list-group-item">
-                    <button type="button" id="send_question" class="btn btn-primary btn-lg"> Send Question </button>
-                  </li>
-
-                  <li class="list-group-item">
-                      <div id="question"></div>
-                      
-                  </li>
-                  <li class="list-group-item">
-                    <div id="status"></div>
-                </li>
-                </ul>
+                  
+                </tbody>
+              </table>
 
 
 
-            </div>
-          </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
         </div>
       </div>
       <script src="load.js"></script>
-      <script src="./question.js"></script>
+      <script src="./question_list.js"></script>
       
+
+      <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+      <script src="//cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox-plus-jquery.min.js"></script>>
+      
+      
+
     </body>
     </html>

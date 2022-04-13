@@ -96,7 +96,7 @@ export class Contract {
     var _answer_question_key: string = _answer_question_id.toString()+"_"+ question_details.question_answer_count.toString();
 
     assert(!answer.contains(_answer_question_key), "answer exist")
-    assert(question_details.question_owner != Context.sender, "you are owner question. you can not answer own question")
+    //assert(question_details.question_owner != Context.sender, "you are owner question. you can not answer own question")
     answer.set(_answer_question_key, {
       answer_file_hash: _answer_file_hash,
       answer_owner: Context.sender

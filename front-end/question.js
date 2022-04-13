@@ -54,29 +54,5 @@ async function show_question(file_address, question_number){
     html += '<button class="btn btn-default" id="delete_question" value="'+question_number+'">Delete</button>';
     document.getElementById("question").innerHTML = html;
 }
-async function file_upload(){
-    var file_hash;
-    var form = new FormData();
-    form.append("file", file.files[0], file.name);
 
-    var settings = {
-    "url": "https://api.pinata.cloud/pinning/pinFileToIPFS",
-    "method": "POST",
-    "timeout": 0,
-    "headers": {
-        "pinata_api_key": "d4155aa6b3d3785f8be6",
-        "pinata_secret_api_key": "b318999e4e4f38d9d33bb153cfdd722a2ed865da61f75cf754ef6cec697cb6b5"
-    },
-    "processData": false,
-    "mimeType": "multipart/form-data",
-    "contentType": false,
-    "data": form
-    };
-
-    await $.ajax(settings).done( function (response) {
-    response = JSON.parse(response);
-    file_hash = response.IpfsHash;
-    });
-    return file_hash;
-}
 

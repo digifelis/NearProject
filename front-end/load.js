@@ -5,6 +5,8 @@ var send_question_button = document.getElementById("send_question");
 var connect_button = document.getElementById("connect");
 
 
+
+
 async function load() {
     /* connect near */
     const near = await new nearApi.Near({
@@ -39,6 +41,13 @@ async function get_question(question_number){
     )
     return response;
 }
+async function deleteQuestion(question_number){
+    var response = await contract.deleteQuestion({
+        "_question_id": reverse(question_number)
+    }
+    )
+    return response;
+}
 async function after_payment(){
     const provider = new nearApi.providers.JsonRpcProvider(
         "https://archival-rpc.testnet.near.org"
@@ -46,24 +55,28 @@ async function after_payment(){
 
     var url_param = parseURLParams();
 
-    if(url_param != undefined){
-        console.log(url_param["transactionHashes"][0]);
-        var result = await provider.txStatus(url_param["transactionHashes"][0], wallet.getAccountId());
-        if (result){
-            console.log("success", await get_counter());
-
-            var question_details = await get_question(await get_counter());
-            // await get_counter()
-            await show_question(question_details["question_file_hash"], await get_counter());
-            console.log(question_details);
-
-            var delete_question_button = document.getElementById("delete_question");
-            delete_question_button.addEventListener('click', async function (){
-                console.log(document.getElementById("delete_question").value);
-                await deleteQuestion(document.getElementById("delete_question").value);
-                window.location.replace("add_question.html");
-            })
+    if(url_param != undefined ){
+        console.log(url_param["transactionHashes"]);
+        if(url_param["transactionHashes"] != undefined){
+            
+            var result = await provider.txStatus(url_param["transactionHashes"][0], wallet.getAccountId());
+            if (result){
+                console.log("success", await get_counter());
+    
+                var question_details = await get_question(await get_counter());
+                // await get_counter()
+                await show_question(question_details["question_file_hash"], await get_counter());
+                console.log(question_details);
+    
+                var delete_question_button = document.getElementById("delete_question");
+                delete_question_button.addEventListener('click', async function (){
+                    console.log(document.getElementById("delete_question").value);
+                    await deleteQuestion(document.getElementById("delete_question").value);
+                    window.location.replace("add_question.html");
+                })
+            }
         }
+        
     }
 }
 function reverse(n) {
@@ -98,4 +111,30 @@ function parseURLParams() {
         parms[n].push(nv.length === 2 ? v : null);
     }
     return parms;
+}
+
+async function file_upload(){
+    var file_hash;
+    var form = new FormData();
+    form.append("file", file.files[0], file.name);
+
+    var settings = {
+    "url": "https://api.pinata.cloud/pinning/pinFileToIPFS",
+    "method": "POST",
+    "timeout": 0,
+    "headers": {
+        "pinata_api_key": "d4155aa6b3d3785f8be6",
+        "pinata_secret_api_key": "b318999e4e4f38d9d33bb153cfdd722a2ed865da61f75cf754ef6cec697cb6b5"
+    },
+    "processData": false,
+    "mimeType": "multipart/form-data",
+    "contentType": false,
+    "data": form
+    };
+
+    await $.ajax(settings).done( function (response) {
+    response = JSON.parse(response);
+    file_hash = response.IpfsHash;
+    });
+    return file_hash;
 }
