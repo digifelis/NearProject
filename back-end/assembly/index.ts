@@ -1,5 +1,5 @@
 // Context include information about the transaction like the sender.
-import { PersistentMap , Context, logging, PersistentVector, PersistentSet, u128, ContractPromiseBatch, ContractPromise } from "near-sdk-as";
+import { PersistentMap , Context, logging, PersistentVector, PersistentSet, u128, ContractPromiseBatch, ContractPromise, storage } from "near-sdk-as";
 @nearBindgen
 class Questions {
   question_file_hash: string;
@@ -22,14 +22,22 @@ var funding: u128 = u128.Zero;
 
 const ONE_NEAR = u128.from("1000000000000000000000000");
 const CONTRIBUTION_SAFETY_LIMIT: u128 = u128.mul(ONE_NEAR, u128.from(5));
-
+const last_question_number=  new PersistentSet<i32>("l");
 
 
 @nearBindgen
 export class Contract {
-
+  getCounter(): i32 {
+    return storage.getPrimitive<i32>("counter", 0);
+  }
+  lastQuestionNumber(): i32 {
+    const newCounter = storage.getPrimitive<i32>("counter", 0) + 1;
+    storage.set<i32>("counter", newCounter);
+    logging.log("Counter is now: " + newCounter.toString());
+    return newCounter;
+  }
 /* question functions */
-  createQuestion(_question_id: i32, _question_file_hash: string, _question_payment_amount: string): void {
+  createQuestion(_question_id: i32, _question_file_hash: string, _question_payment_amount: string): boolean {
     assert(_question_id > 0, "Quesiton may not be blank" )
     assert(_question_file_hash.length > 0, "File may not be blank")
     assert(u128.fromString(_question_payment_amount) > u128.fromI32(0), "Payment may not be zero")
@@ -45,6 +53,7 @@ export class Contract {
       question_answer_id:""
     });
     this.UnAnsweraddElement(_question_id);
+    return true;
   }
   
   private updateQuestionAnswerCount(_question_id: i32): void{
@@ -61,7 +70,7 @@ export class Contract {
     });
   }
 
-  deleteQuestion(_question_id: i32): void{
+  deleteQuestion(_question_id: i32): boolean{
     assert(_question_id > 0, "Question may not blank");
     assert(question.contains(_question_id), "Question not found");
     var question_details = question.getSome(_question_id);
@@ -69,12 +78,15 @@ export class Contract {
     assert(question_details.question_answer_id == "", "you cant delete question after answer confirmed");
     this.UnAnswerdeleteElement(_question_id);
     question.delete(_question_id);
+    return true;
   }
   getQuestion(_question_id: i32): Questions {
     assert(_question_id > 0, "Question may not blank")
     assert(question.contains(_question_id), "Question not found")
     return question.getSome(_question_id);  
   }
+
+
   /* answer function */
   addAnswer(_answer_question_id: i32, _answer_file_hash: string): string {
     assert(_answer_question_id > 0, "Answer number may not be blank")
