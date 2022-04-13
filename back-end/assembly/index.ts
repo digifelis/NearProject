@@ -22,6 +22,9 @@ var funding: u128 = u128.Zero;
 
 const ONE_NEAR = u128.from("1000000000000000000000000");
 const CONTRIBUTION_SAFETY_LIMIT: u128 = u128.mul(ONE_NEAR, u128.from(5));
+
+
+
 @nearBindgen
 export class Contract {
 
@@ -32,7 +35,7 @@ export class Contract {
     assert(u128.fromString(_question_payment_amount) > u128.fromI32(0), "Payment may not be zero")
 
     this.assert_financial_safety_limits(u128.fromString(_question_payment_amount))
-    this.transferPayment(Context.sender, main_wallet, _question_payment_amount);
+    this.transferPayment(main_wallet, _question_payment_amount);
 
     question.set(_question_id, {
       question_file_hash: _question_file_hash,
@@ -81,7 +84,7 @@ export class Contract {
     var _answer_question_key: string = _answer_question_id.toString()+"_"+ question_details.question_answer_count.toString();
 
     assert(!answer.contains(_answer_question_key), "answer exist")
-    
+    assert(question_details.question_owner != Context.sender, "you are owner question. you can not answer own question")
     answer.set(_answer_question_key, {
       answer_file_hash: _answer_file_hash,
       answer_owner: Context.sender
@@ -139,16 +142,14 @@ export class Contract {
   private sendPayment(_question_id: i32): void{
     var question_details = question.getSome(_question_id);
     var answer_details = answer.getSome(question_details.question_answer_id);
-    this.transferPayment(question_details.question_owner, answer_details.answer_owner, question_details.question_payment_amount)
+    this.transferPayment(answer_details.answer_owner, question_details.question_payment_amount)
 
   }
-  private transferPayment(_sender: string, _receiver: string, _amount: string): void{
-    //funding = u128.add(Context.attachedDeposit, funding);
-    //assert(funding > u128.Zero, "No received (pending) funds to be transferred")
-    var receiver = ContractPromiseBatch.create(_receiver);
-    receiver.transfer(u128.from(_amount));
+  private transferPayment(_receiver: string, _amount: string): void{
+    funding = u128.add(Context.attachedDeposit, u128.from(_amount));
+    assert(funding > u128.Zero, "No received (pending) funds to be transferred")
+    ContractPromiseBatch.create(_receiver).transfer(u128.from(_amount));
   }
-
 
   /* UnAnswer functions */
   UnAnswergetLength(): i32{
