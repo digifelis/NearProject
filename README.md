@@ -1,4 +1,4 @@
-# NearProject
+# Knowledge Platform
 
 [![Near Knowledge Demo](https://raw.githubusercontent.com/digifelis/NearProject/main/Screenshot1.png)](https://www.loom.com/share/870c4a52b5a24cc386d9acb8a39a2833)
 
