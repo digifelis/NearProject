@@ -1,5 +1,10 @@
 # NearProject
 
+[![Near Knowledge Demo](https://raw.githubusercontent.com/digifelis/NearProject/main/Screenshot1.png)](https://www.loom.com/share/870c4a52b5a24cc386d9acb8a39a2833)
+
+
+
+
 In this app, Students can ask questions such as math, and physics domain via price which are specified price amounts.  
 Then experts can answer in order to earn the award.
 
@@ -8,7 +13,7 @@ The student is going to take a photo of the question and upload it to the app wi
 Experts will give answers. there is no time competition for in giving answers. 
 The student will choose an answer. the answer owner will be awarded the prize.
 
-
+## Back-End
 
 #### create question
 near call contract_address createQuestion '{\"_question_id\":question_id, \"_question_file_hash\":\"question file hash or address\", \"_question_payment_amount\": \"amonut price\"}' --account_id sender_account
@@ -33,3 +38,9 @@ near call contract_address deleteAnswer '{\"_answer_id\":\"answer_id\"}' --accou
 
 #### confirm answer
 near call contract_address confirmAnswer '{\"_question_id\":question_id, \"_answer_id\":\"answer_id\"}' --account_id sender_account
+
+
+## Front-End
+
+[![Near Knowledge Demo Add Question](https://raw.githubusercontent.com/digifelis/NearProject/main/Screenshot2.png)]
+[![Near Knowledge Demo List Question](https://raw.githubusercontent.com/digifelis/NearProject/main/Screenshot3.png)]
