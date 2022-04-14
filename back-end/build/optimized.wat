@@ -325,36 +325,38 @@
  (data (i32.const 10920) "\01\00\00\00\02\00\00\00_")
  (data (i32.const 10940) ",")
  (data (i32.const 10952) "\01\00\00\00\18\00\00\00a\00n\00s\00w\00e\00r\00 \00e\00x\00i\00s\00t")
- (data (i32.const 10988) "<")
- (data (i32.const 11000) "\01\00\00\00 \00\00\00a\00n\00s\00w\00e\00r\00_\00f\00i\00l\00e\00_\00h\00a\00s\00h")
- (data (i32.const 11052) ",")
- (data (i32.const 11064) "\01\00\00\00\18\00\00\00a\00n\00s\00w\00e\00r\00_\00o\00w\00n\00e\00r")
- (data (i32.const 11100) ",")
- (data (i32.const 11112) "\01\00\00\00\14\00\00\00_\00a\00n\00s\00w\00e\00r\00_\00i\00d")
- (data (i32.const 11148) "L")
- (data (i32.const 11160) "\01\00\00\00<\00\00\00a\00n\00s\00w\00e\00r\00 \00p\00a\00r\00a\00m\00e\00t\00r\00e\00 \00m\00a\00y\00 \00n\00o\00t\00 \00b\00l\00a\00n\00k")
- (data (i32.const 11228) "<")
- (data (i32.const 11240) "\01\00\00\00 \00\00\00a\00n\00s\00w\00e\00r\00 \00n\00o\00t\00 \00f\00o\00u\00n\00d")
- (data (i32.const 11292) ",")
- (data (i32.const 11304) "\01\00\00\00\0e\00\00\00A\00n\00s\00w\00e\00r\00s")
- (data (i32.const 11340) "l")
- (data (i32.const 11352) "\01\00\00\00R\00\00\00y\00o\00u\00 \00c\00a\00n\00 \00n\00o\00t\00 \00d\00e\00l\00e\00t\00e\00 \00o\00t\00h\00e\00r\00 \00p\00e\00o\00p\00l\00e\00\'\00s\00 \00a\00n\00s\00w\00e\00r\00s")
- (data (i32.const 11452) "|")
- (data (i32.const 11464) "\01\00\00\00^\00\00\00y\00o\00u\00 \00c\00a\00n\00t\00 \00c\00h\00a\00n\00g\00e\00 \00q\00u\00e\00s\00t\00i\00o\00n\00 \00a\00f\00t\00e\00r\00 \00a\00n\00s\00w\00e\00r\00 \00c\00o\00n\00f\00i\00r\00m\00e\00d")
- (data (i32.const 11580) "L")
- (data (i32.const 11592) "\01\00\00\008\00\00\00q\00u\00e\00s\00t\00i\00o\00n\00 \00i\00d\00 \00m\00a\00y\00 \00n\00o\00t\00 \00b\00e\00 \00b\00l\00a\00n\00k")
- (data (i32.const 11660) "L")
- (data (i32.const 11672) "\01\00\00\00.\00\00\00a\00n\00s\00w\00e\00r\00 \00m\00a\00y\00 \00n\00o\00t\00 \00b\00e\00 \00b\00l\00a\00n\00k")
- (data (i32.const 11740) "\\")
- (data (i32.const 11752) "\01\00\00\00L\00\00\00O\00n\00l\00y\00 \00q\00u\00e\00s\00t\00i\00o\00n\00 \00o\00w\00n\00e\00r\00 \00c\00a\00n\00 \00c\00o\00n\00f\00i\00r\00m\00 \00a\00n\00s\00w\00e\00r")
- (data (i32.const 11840) ")\00\00\00 \00\00\00\00\00\00\00 ")
- (data (i32.const 11908) "A\00\00\00\02")
- (data (i32.const 11932) " \00\00\00\0c\00\00\00 \00\00\00\00\00\00\00 \00\00\00\00\00\00\00 \00\00\00\0d\00\00\00 \00\00\00\00\00\00\00 \00\00\00\0f\00\00\00 \00\00\00\12\00\00\00 \00\00\00\00\00\00\00B\00\00\00\00\00\00\00 \00\00\00\00\00\00\00 ")
- (data (i32.const 12024) "\17\00\00\00 \00\00\00\00\00\00\00\02A")
- (data (i32.const 12064) "\15\00\00\00\10A\82")
- (data (i32.const 12080) "\15\00\00\00\02A")
- (data (i32.const 12096) "\15\00\00\00 \00\00\00\15\00\00\00 \00\00\00\"\00\00\00 \00\00\00\15\00\00\00 \00\00\00\15\00\00\00 \00\00\00\15\00\00\00\00\00\00\00&")
- (data (i32.const 12156) "\02\t\00\00\00\00\00\00 ")
+ (data (i32.const 10988) "\8c")
+ (data (i32.const 11000) "\01\00\00\00n\00\00\00y\00o\00u\00 \00a\00r\00e\00 \00o\00w\00n\00e\00r\00 \00q\00u\00e\00s\00t\00i\00o\00n\00.\00 \00y\00o\00u\00 \00c\00a\00n\00 \00n\00o\00t\00 \00a\00n\00s\00w\00e\00r\00 \00o\00w\00n\00 \00q\00u\00e\00s\00t\00i\00o\00n")
+ (data (i32.const 11132) "<")
+ (data (i32.const 11144) "\01\00\00\00 \00\00\00a\00n\00s\00w\00e\00r\00_\00f\00i\00l\00e\00_\00h\00a\00s\00h")
+ (data (i32.const 11196) ",")
+ (data (i32.const 11208) "\01\00\00\00\18\00\00\00a\00n\00s\00w\00e\00r\00_\00o\00w\00n\00e\00r")
+ (data (i32.const 11244) ",")
+ (data (i32.const 11256) "\01\00\00\00\14\00\00\00_\00a\00n\00s\00w\00e\00r\00_\00i\00d")
+ (data (i32.const 11292) "L")
+ (data (i32.const 11304) "\01\00\00\00<\00\00\00a\00n\00s\00w\00e\00r\00 \00p\00a\00r\00a\00m\00e\00t\00r\00e\00 \00m\00a\00y\00 \00n\00o\00t\00 \00b\00l\00a\00n\00k")
+ (data (i32.const 11372) "<")
+ (data (i32.const 11384) "\01\00\00\00 \00\00\00a\00n\00s\00w\00e\00r\00 \00n\00o\00t\00 \00f\00o\00u\00n\00d")
+ (data (i32.const 11436) ",")
+ (data (i32.const 11448) "\01\00\00\00\0e\00\00\00A\00n\00s\00w\00e\00r\00s")
+ (data (i32.const 11484) "l")
+ (data (i32.const 11496) "\01\00\00\00R\00\00\00y\00o\00u\00 \00c\00a\00n\00 \00n\00o\00t\00 \00d\00e\00l\00e\00t\00e\00 \00o\00t\00h\00e\00r\00 \00p\00e\00o\00p\00l\00e\00\'\00s\00 \00a\00n\00s\00w\00e\00r\00s")
+ (data (i32.const 11596) "|")
+ (data (i32.const 11608) "\01\00\00\00^\00\00\00y\00o\00u\00 \00c\00a\00n\00t\00 \00c\00h\00a\00n\00g\00e\00 \00q\00u\00e\00s\00t\00i\00o\00n\00 \00a\00f\00t\00e\00r\00 \00a\00n\00s\00w\00e\00r\00 \00c\00o\00n\00f\00i\00r\00m\00e\00d")
+ (data (i32.const 11724) "L")
+ (data (i32.const 11736) "\01\00\00\008\00\00\00q\00u\00e\00s\00t\00i\00o\00n\00 \00i\00d\00 \00m\00a\00y\00 \00n\00o\00t\00 \00b\00e\00 \00b\00l\00a\00n\00k")
+ (data (i32.const 11804) "L")
+ (data (i32.const 11816) "\01\00\00\00.\00\00\00a\00n\00s\00w\00e\00r\00 \00m\00a\00y\00 \00n\00o\00t\00 \00b\00e\00 \00b\00l\00a\00n\00k")
+ (data (i32.const 11884) "\\")
+ (data (i32.const 11896) "\01\00\00\00L\00\00\00O\00n\00l\00y\00 \00q\00u\00e\00s\00t\00i\00o\00n\00 \00o\00w\00n\00e\00r\00 \00c\00a\00n\00 \00c\00o\00n\00f\00i\00r\00m\00 \00a\00n\00s\00w\00e\00r")
+ (data (i32.const 11984) ")\00\00\00 \00\00\00\00\00\00\00 ")
+ (data (i32.const 12052) "A\00\00\00\02")
+ (data (i32.const 12076) " \00\00\00\0c\00\00\00 \00\00\00\00\00\00\00 \00\00\00\00\00\00\00 \00\00\00\0d\00\00\00 \00\00\00\00\00\00\00 \00\00\00\0f\00\00\00 \00\00\00\12\00\00\00 \00\00\00\00\00\00\00B\00\00\00\00\00\00\00 \00\00\00\00\00\00\00 ")
+ (data (i32.const 12168) "\17\00\00\00 \00\00\00\00\00\00\00\02A")
+ (data (i32.const 12208) "\15\00\00\00\10A\82")
+ (data (i32.const 12224) "\15\00\00\00\02A")
+ (data (i32.const 12240) "\15\00\00\00 \00\00\00\15\00\00\00 \00\00\00\"\00\00\00 \00\00\00\15\00\00\00 \00\00\00\15\00\00\00 \00\00\00\15\00\00\00\00\00\00\00&")
+ (data (i32.const 12300) "\02\t\00\00\00\00\00\00 ")
  (export "getCounter" (func $assembly/index/__wrapper_getCounter))
  (export "get_counter" (func $assembly/index/__wrapper_getCounter))
  (export "lastQuestionNumber" (func $assembly/index/__wrapper_lastQuestionNumber))
@@ -3921,7 +3923,7 @@
     i32.sub
     i32.load offset=12
     local.tee $3
-    i32.const 11840
+    i32.const 11984
     i32.load
     i32.le_u
     if
@@ -3935,7 +3937,7 @@
       local.get $3
       i32.const 3
       i32.shl
-      i32.const 11844
+      i32.const 11988
       i32.add
       i32.load offset=4
       local.tee $3
@@ -3962,7 +3964,7 @@
     i32.sub
     i32.load offset=12
     local.tee $4
-    i32.const 11840
+    i32.const 11984
     i32.load
     i32.le_u
     if
@@ -3976,7 +3978,7 @@
       local.get $4
       i32.const 3
       i32.shl
-      i32.const 11844
+      i32.const 11988
       i32.add
       i32.load offset=4
       local.tee $4
@@ -4188,7 +4190,7 @@
      i32.sub
      i32.load offset=12
      local.tee $4
-     i32.const 11840
+     i32.const 11984
      i32.load
      i32.le_u
      if
@@ -4202,7 +4204,7 @@
        local.get $4
        i32.const 3
        i32.shl
-       i32.const 11844
+       i32.const 11988
        i32.add
        i32.load offset=4
        local.tee $4
@@ -4229,7 +4231,7 @@
      i32.sub
      i32.load offset=12
      local.tee $1
-     i32.const 11840
+     i32.const 11984
      i32.load
      i32.le_u
      if
@@ -4243,7 +4245,7 @@
        local.get $1
        i32.const 3
        i32.shl
-       i32.const 11844
+       i32.const 11988
        i32.add
        i32.load offset=4
        local.tee $1
@@ -7201,7 +7203,7 @@
     i32.sub
     i32.load offset=12
     local.tee $1
-    i32.const 11840
+    i32.const 11984
     i32.load
     i32.le_u
     if
@@ -7215,7 +7217,7 @@
       local.get $1
       i32.const 3
       i32.shl
-      i32.const 11844
+      i32.const 11988
       i32.add
       i32.load offset=4
       local.tee $1
@@ -7243,7 +7245,7 @@
     i32.sub
     i32.load offset=12
     local.tee $0
-    i32.const 11840
+    i32.const 11984
     i32.load
     i32.le_u
     if
@@ -7257,7 +7259,7 @@
       local.get $0
       i32.const 3
       i32.shl
-      i32.const 11844
+      i32.const 11988
       i32.add
       i32.load offset=4
       local.tee $0
@@ -7292,7 +7294,7 @@
     i32.sub
     i32.load offset=12
     local.tee $1
-    i32.const 11840
+    i32.const 11984
     i32.load
     i32.le_u
     if
@@ -7306,7 +7308,7 @@
       local.get $1
       i32.const 3
       i32.shl
-      i32.const 11844
+      i32.const 11988
       i32.add
       i32.load offset=4
       local.tee $1
@@ -7329,7 +7331,7 @@
     i32.sub
     i32.load offset=12
     local.tee $1
-    i32.const 11840
+    i32.const 11984
     i32.load
     i32.le_u
     if
@@ -7343,7 +7345,7 @@
       local.get $1
       i32.const 3
       i32.shl
-      i32.const 11844
+      i32.const 11988
       i32.add
       i32.load offset=4
       local.tee $1
@@ -7366,7 +7368,7 @@
      i32.sub
      i32.load offset=12
      local.tee $1
-     i32.const 11840
+     i32.const 11984
      i32.load
      i32.le_u
      if
@@ -7380,7 +7382,7 @@
        local.get $1
        i32.const 3
        i32.shl
-       i32.const 11844
+       i32.const 11988
        i32.add
        i32.load offset=4
        local.tee $1
@@ -7414,7 +7416,7 @@
      i32.sub
      i32.load offset=12
      local.tee $0
-     i32.const 11840
+     i32.const 11984
      i32.load
      i32.le_u
      if
@@ -7428,7 +7430,7 @@
        local.get $0
        i32.const 3
        i32.shl
-       i32.const 11844
+       i32.const 11988
        i32.add
        i32.load offset=4
        local.tee $0
@@ -7458,7 +7460,7 @@
    i32.sub
    i32.load offset=12
    local.tee $0
-   i32.const 11840
+   i32.const 11984
    i32.load
    i32.le_u
    if
@@ -7472,7 +7474,7 @@
      local.get $0
      i32.const 3
      i32.shl
-     i32.const 11844
+     i32.const 11988
      i32.add
      i32.load offset=4
      local.tee $0
@@ -9018,7 +9020,7 @@
    i32.sub
    i32.load offset=12
    local.tee $0
-   i32.const 11840
+   i32.const 11984
    i32.load
    i32.le_u
    if
@@ -9032,7 +9034,7 @@
      local.get $0
      i32.const 3
      i32.shl
-     i32.const 11844
+     i32.const 11988
      i32.add
      i32.load offset=4
      local.tee $0
@@ -9062,7 +9064,7 @@
     i32.sub
     i32.load offset=12
     local.tee $2
-    i32.const 11840
+    i32.const 11984
     i32.load
     i32.le_u
     if
@@ -9076,7 +9078,7 @@
       local.get $2
       i32.const 3
       i32.shl
-      i32.const 11844
+      i32.const 11988
       i32.add
       i32.load offset=4
       local.tee $2
@@ -9104,7 +9106,7 @@
     i32.sub
     i32.load offset=12
     local.tee $0
-    i32.const 11840
+    i32.const 11984
     i32.load
     i32.le_u
     if
@@ -9118,7 +9120,7 @@
       local.get $0
       i32.const 3
       i32.shl
-      i32.const 11844
+      i32.const 11988
       i32.add
       i32.load offset=4
       local.tee $0
@@ -9162,7 +9164,7 @@
     i32.sub
     i32.load offset=12
     local.tee $2
-    i32.const 11840
+    i32.const 11984
     i32.load
     i32.le_u
     if
@@ -9176,7 +9178,7 @@
       local.get $2
       i32.const 3
       i32.shl
-      i32.const 11844
+      i32.const 11988
       i32.add
       i32.load offset=4
       local.tee $2
@@ -9212,7 +9214,7 @@
    i32.sub
    i32.load offset=12
    local.tee $0
-   i32.const 11840
+   i32.const 11984
    i32.load
    i32.le_u
    if
@@ -9226,7 +9228,7 @@
      local.get $0
      i32.const 3
      i32.shl
-     i32.const 11844
+     i32.const 11988
      i32.add
      i32.load offset=4
      local.tee $0
@@ -9275,7 +9277,7 @@
     i32.sub
     i32.load offset=12
     local.tee $3
-    i32.const 11840
+    i32.const 11984
     i32.load
     i32.le_u
     if
@@ -9289,7 +9291,7 @@
       local.get $3
       i32.const 3
       i32.shl
-      i32.const 11844
+      i32.const 11988
       i32.add
       i32.load offset=4
       local.tee $3
@@ -9317,7 +9319,7 @@
     i32.sub
     i32.load offset=12
     local.tee $0
-    i32.const 11840
+    i32.const 11984
     i32.load
     i32.le_u
     if
@@ -9331,7 +9333,7 @@
       local.get $0
       i32.const 3
       i32.shl
-      i32.const 11844
+      i32.const 11988
       i32.add
       i32.load offset=4
       local.tee $0
@@ -9368,7 +9370,7 @@
     i32.sub
     i32.load offset=12
     local.tee $3
-    i32.const 11840
+    i32.const 11984
     i32.load
     i32.le_u
     if
@@ -9382,7 +9384,7 @@
       local.get $3
       i32.const 3
       i32.shl
-      i32.const 11844
+      i32.const 11988
       i32.add
       i32.load offset=4
       local.tee $3
@@ -9406,7 +9408,7 @@
     i32.sub
     i32.load offset=12
     local.tee $0
-    i32.const 11840
+    i32.const 11984
     i32.load
     i32.le_u
     if
@@ -9420,7 +9422,7 @@
       local.get $0
       i32.const 3
       i32.shl
-      i32.const 11844
+      i32.const 11988
       i32.add
       i32.load offset=4
       local.tee $0
@@ -9451,7 +9453,7 @@
    i32.sub
    i32.load offset=12
    local.tee $3
-   i32.const 11840
+   i32.const 11984
    i32.load
    i32.le_u
    if
@@ -9465,7 +9467,7 @@
      local.get $3
      i32.const 3
      i32.shl
-     i32.const 11844
+     i32.const 11988
      i32.add
      i32.load offset=4
      local.tee $3
@@ -9628,7 +9630,7 @@
   if
    i32.const 9216
    i32.const 8416
-   i32.const 233
+   i32.const 234
    i32.const 5
    call $~lib/builtins/abort
    unreachable
@@ -10282,7 +10284,7 @@
   if
    i32.const 8784
    i32.const 8416
-   i32.const 223
+   i32.const 224
    i32.const 5
    call $~lib/builtins/abort
    unreachable
@@ -10309,7 +10311,7 @@
   if
    i32.const 9024
    i32.const 8416
-   i32.const 224
+   i32.const 225
    i32.const 5
    call $~lib/builtins/abort
    unreachable
@@ -10491,7 +10493,7 @@
     i32.sub
     i32.load offset=12
     local.tee $2
-    i32.const 11840
+    i32.const 11984
     i32.load
     i32.le_u
     if
@@ -10505,7 +10507,7 @@
       local.get $2
       i32.const 3
       i32.shl
-      i32.const 11844
+      i32.const 11988
       i32.add
       i32.load offset=4
       local.tee $2
@@ -10533,7 +10535,7 @@
     i32.sub
     i32.load offset=12
     local.tee $0
-    i32.const 11840
+    i32.const 11984
     i32.load
     i32.le_u
     if
@@ -10547,7 +10549,7 @@
       local.get $0
       i32.const 3
       i32.shl
-      i32.const 11844
+      i32.const 11988
       i32.add
       i32.load offset=4
       local.tee $0
@@ -10584,7 +10586,7 @@
     i32.sub
     i32.load offset=12
     local.tee $0
-    i32.const 11840
+    i32.const 11984
     i32.load
     i32.le_u
     if
@@ -10598,7 +10600,7 @@
       local.get $0
       i32.const 3
       i32.shl
-      i32.const 11844
+      i32.const 11988
       i32.add
       i32.load offset=4
       local.tee $0
@@ -10622,7 +10624,7 @@
     i32.sub
     i32.load offset=12
     local.tee $0
-    i32.const 11840
+    i32.const 11984
     i32.load
     i32.le_u
     if
@@ -10636,7 +10638,7 @@
       local.get $0
       i32.const 3
       i32.shl
-      i32.const 11844
+      i32.const 11988
       i32.add
       i32.load offset=4
       local.tee $0
@@ -10659,7 +10661,7 @@
      i32.sub
      i32.load offset=12
      local.tee $0
-     i32.const 11840
+     i32.const 11984
      i32.load
      i32.le_u
      if
@@ -10673,7 +10675,7 @@
        local.get $0
        i32.const 3
        i32.shl
-       i32.const 11844
+       i32.const 11988
        i32.add
        i32.load offset=4
        local.tee $0
@@ -10707,7 +10709,7 @@
      i32.sub
      i32.load offset=12
      local.tee $0
-     i32.const 11840
+     i32.const 11984
      i32.load
      i32.le_u
      if
@@ -10721,7 +10723,7 @@
        local.get $0
        i32.const 3
        i32.shl
-       i32.const 11844
+       i32.const 11988
        i32.add
        i32.load offset=4
        local.tee $0
@@ -10751,7 +10753,7 @@
    i32.sub
    i32.load offset=12
    local.tee $2
-   i32.const 11840
+   i32.const 11984
    i32.load
    i32.le_u
    if
@@ -10765,7 +10767,7 @@
      local.get $2
      i32.const 3
      i32.shl
-     i32.const 11844
+     i32.const 11988
      i32.add
      i32.load offset=4
      local.tee $2
@@ -11411,12 +11413,12 @@
    call $~lib/array/Array<~lib/assemblyscript-json/JSON/Value>#push
    local.get $0
    i32.load
-   i32.const 11008
+   i32.const 11152
    local.get $1
    call $~lib/near-sdk-bindgen/index/encode<~lib/string/String,~lib/near-sdk-bindgen/index/JSONEncoder>
    local.get $0
    i32.load offset=4
-   i32.const 11072
+   i32.const 11216
    local.get $1
    call $~lib/near-sdk-bindgen/index/encode<~lib/string/String,~lib/near-sdk-bindgen/index/JSONEncoder>
    local.get $1
@@ -11476,7 +11478,7 @@
    i32.const 10688
    call $~lib/near-sdk-bindgen/index/requireParameter<~lib/string/String>
   end
-  local.set $1
+  local.set $2
   local.get $0
   i32.const 0
   i32.le_s
@@ -11488,7 +11490,7 @@
    call $~lib/builtins/abort
    unreachable
   end
-  local.get $1
+  local.get $2
   i32.const 20
   i32.sub
   i32.load offset=16
@@ -11509,25 +11511,25 @@
   call $~lib/util/number/itoa32
   call $~lib/string/String#concat
   call $~lib/near-sdk-core/storage/Storage.getSome<assembly/index/Questions>
-  local.set $2
+  local.set $3
   local.get $0
   call $~lib/util/number/itoa32
   i32.const 10928
   call $~lib/string/String#concat
-  local.get $2
+  local.get $3
   i32.load offset=12
   call $~lib/util/number/itoa32
   call $~lib/string/String#concat
-  local.set $2
+  local.set $1
   global.get $assembly/index/answer
   i32.load
-  local.get $2
+  local.get $1
   call $~lib/string/String#concat
   call $~lib/near-sdk-core/util/util.stringToBytes
-  local.tee $3
+  local.tee $4
   i32.load offset=8
   i64.extend_i32_s
-  local.get $3
+  local.get $4
   i32.load offset=4
   i64.extend_i32_u
   call $~lib/near-sdk-core/env/env/env.storage_has_key
@@ -11537,6 +11539,20 @@
    i32.const 10960
    i32.const 8416
    i32.const 180
+   i32.const 5
+   call $~lib/builtins/abort
+   unreachable
+  end
+  local.get $3
+  i32.load offset=8
+  i64.const 0
+  call $~lib/near-sdk-core/env/env/env.signer_account_id
+  call $~lib/near-sdk-core/util/util.read_register_string
+  call $~lib/string/String.__eq
+  if
+   i32.const 11008
+   i32.const 8416
+   i32.const 181
    i32.const 5
    call $~lib/builtins/abort
    unreachable
@@ -11552,7 +11568,7 @@
   i32.const 0
   i32.store offset=4
   local.get $4
-  local.get $1
+  local.get $2
   i32.store
   i64.const 0
   call $~lib/near-sdk-core/env/env/env.signer_account_id
@@ -11560,7 +11576,7 @@
   call $~lib/near-sdk-core/util/util.read_register_string
   i32.store offset=4
   i32.load
-  local.get $2
+  local.get $1
   call $~lib/string/String#concat
   i32.const 1
   global.set $~argumentsLength
@@ -11584,10 +11600,10 @@
   call $~lib/util/number/itoa32
   call $~lib/string/String#concat
   call $~lib/near-sdk-core/util/util.stringToBytes
-  local.tee $1
+  local.tee $2
   i32.load offset=8
   i64.extend_i32_s
-  local.get $1
+  local.get $2
   i32.load offset=4
   i64.extend_i32_u
   call $~lib/near-sdk-core/env/env/env.storage_has_key
@@ -11606,29 +11622,29 @@
   call $~lib/util/number/itoa32
   call $~lib/string/String#concat
   call $~lib/near-sdk-core/storage/Storage.getSome<assembly/index/Questions>
-  local.set $1
+  local.set $2
   global.get $assembly/index/question
   call $assembly/index/Questions#constructor
   local.tee $4
-  local.get $1
+  local.get $2
   i32.load
   i32.store
   local.get $4
-  local.get $1
+  local.get $2
   i32.load offset=4
   i32.store offset=4
   local.get $4
-  local.get $1
+  local.get $2
   i32.load offset=8
   i32.store offset=8
   local.get $4
-  local.get $1
+  local.get $2
   i32.load offset=12
   i32.const 1
   i32.add
   i32.store offset=12
   local.get $4
-  local.get $1
+  local.get $2
   i32.load offset=16
   i32.store offset=16
   local.get $0
@@ -11638,13 +11654,13 @@
   global.set $~argumentsLength
   call $~lib/near-sdk-bindgen/index/JSONEncoder#constructor
   local.set $0
-  local.get $2
+  local.get $1
   if
    local.get $0
    i32.const 1088
    call $~lib/assemblyscript-json/encoder/JSONEncoder#writeKey
    local.get $0
-   local.get $2
+   local.get $1
    call $~lib/assemblyscript-json/encoder/JSONEncoder#writeString
   else
    local.get $0
@@ -11680,7 +11696,7 @@
     i32.sub
     i32.load offset=12
     local.tee $2
-    i32.const 11840
+    i32.const 11984
     i32.load
     i32.le_u
     if
@@ -11694,7 +11710,7 @@
       local.get $2
       i32.const 3
       i32.shl
-      i32.const 11844
+      i32.const 11988
       i32.add
       i32.load offset=4
       local.tee $2
@@ -11722,7 +11738,7 @@
     i32.sub
     i32.load offset=12
     local.tee $0
-    i32.const 11840
+    i32.const 11984
     i32.load
     i32.le_u
     if
@@ -11736,7 +11752,7 @@
       local.get $0
       i32.const 3
       i32.shl
-      i32.const 11844
+      i32.const 11988
       i32.add
       i32.load offset=4
       local.tee $0
@@ -11773,7 +11789,7 @@
     i32.sub
     i32.load offset=12
     local.tee $0
-    i32.const 11840
+    i32.const 11984
     i32.load
     i32.le_u
     if
@@ -11787,7 +11803,7 @@
       local.get $0
       i32.const 3
       i32.shl
-      i32.const 11844
+      i32.const 11988
       i32.add
       i32.load offset=4
       local.tee $0
@@ -11811,7 +11827,7 @@
     i32.sub
     i32.load offset=12
     local.tee $0
-    i32.const 11840
+    i32.const 11984
     i32.load
     i32.le_u
     if
@@ -11825,7 +11841,7 @@
       local.get $0
       i32.const 3
       i32.shl
-      i32.const 11844
+      i32.const 11988
       i32.add
       i32.load offset=4
       local.tee $0
@@ -11848,7 +11864,7 @@
      i32.sub
      i32.load offset=12
      local.tee $0
-     i32.const 11840
+     i32.const 11984
      i32.load
      i32.le_u
      if
@@ -11862,7 +11878,7 @@
        local.get $0
        i32.const 3
        i32.shl
-       i32.const 11844
+       i32.const 11988
        i32.add
        i32.load offset=4
        local.tee $0
@@ -11882,7 +11898,7 @@
    call $~lib/string/String#concat
    i32.const 5280
    call $~lib/string/String#concat
-   i32.const 11312
+   i32.const 11456
    call $~lib/string/String#concat
    i32.const 5456
    call $~lib/string/String#concat
@@ -11896,7 +11912,7 @@
      i32.sub
      i32.load offset=12
      local.tee $0
-     i32.const 11840
+     i32.const 11984
      i32.load
      i32.le_u
      if
@@ -11910,7 +11926,7 @@
        local.get $0
        i32.const 3
        i32.shl
-       i32.const 11844
+       i32.const 11988
        i32.add
        i32.load offset=4
        local.tee $0
@@ -11940,7 +11956,7 @@
    i32.sub
    i32.load offset=12
    local.tee $2
-   i32.const 11840
+   i32.const 11984
    i32.load
    i32.le_u
    if
@@ -11954,7 +11970,7 @@
      local.get $2
      i32.const 3
      i32.shl
-     i32.const 11844
+     i32.const 11988
      i32.add
      i32.load offset=4
      local.tee $2
@@ -11975,13 +11991,13 @@
   local.get $0
   local.get $1
   i32.load
-  i32.const 11008
-  i32.const 11008
+  i32.const 11152
+  i32.const 11152
   call $~lib/util/hash/HASH<~lib/string/String>
   call $~lib/map/Map<~lib/string/String,~lib/assemblyscript-json/JSON/Value>#find
   if (result i32)
    local.get $1
-   i32.const 11008
+   i32.const 11152
    call $~lib/near-sdk-bindgen/index/decode<~lib/string/String,~lib/assemblyscript-json/JSON/Obj>
   else
    i32.const 0
@@ -11990,13 +12006,13 @@
   local.get $0
   local.get $1
   i32.load
-  i32.const 11072
-  i32.const 11072
+  i32.const 11216
+  i32.const 11216
   call $~lib/util/hash/HASH<~lib/string/String>
   call $~lib/map/Map<~lib/string/String,~lib/assemblyscript-json/JSON/Value>#find
   if (result i32)
    local.get $1
-   i32.const 11072
+   i32.const 11216
    call $~lib/near-sdk-bindgen/index/decode<~lib/string/String,~lib/assemblyscript-json/JSON/Obj>
   else
    i32.const 0
@@ -12049,16 +12065,16 @@
   call $~lib/near-sdk-bindgen/index/getInput
   local.tee $0
   i32.load
-  i32.const 11120
-  i32.const 11120
+  i32.const 11264
+  i32.const 11264
   call $~lib/util/hash/HASH<~lib/string/String>
   call $~lib/map/Map<~lib/string/String,~lib/assemblyscript-json/JSON/Value>#find
   if (result i32)
    local.get $0
-   i32.const 11120
+   i32.const 11264
    call $~lib/near-sdk-bindgen/index/decode<~lib/string/String,~lib/assemblyscript-json/JSON/Obj>
   else
-   i32.const 11120
+   i32.const 11264
    call $~lib/near-sdk-bindgen/index/requireParameter<~lib/string/String>
   end
   local.tee $0
@@ -12069,9 +12085,9 @@
   i32.shr_u
   i32.eqz
   if
-   i32.const 11168
+   i32.const 11312
    i32.const 8416
-   i32.const 189
+   i32.const 190
    i32.const 5
    call $~lib/builtins/abort
    unreachable
@@ -12090,9 +12106,9 @@
   call $~lib/near-sdk-core/env/env/env.storage_has_key
   i64.eqz
   if
-   i32.const 11248
+   i32.const 11392
    i32.const 8416
-   i32.const 190
+   i32.const 191
    i32.const 5
    call $~lib/builtins/abort
    unreachable
@@ -12670,16 +12686,16 @@
   call $~lib/near-sdk-bindgen/index/getInput
   local.tee $0
   i32.load
-  i32.const 11120
-  i32.const 11120
+  i32.const 11264
+  i32.const 11264
   call $~lib/util/hash/HASH<~lib/string/String>
   call $~lib/map/Map<~lib/string/String,~lib/assemblyscript-json/JSON/Value>#find
   if (result i32)
    local.get $0
-   i32.const 11120
+   i32.const 11264
    call $~lib/near-sdk-bindgen/index/decode<~lib/string/String,~lib/assemblyscript-json/JSON/Obj>
   else
-   i32.const 11120
+   i32.const 11264
    call $~lib/near-sdk-bindgen/index/requireParameter<~lib/string/String>
   end
   local.tee $0
@@ -12690,9 +12706,9 @@
   i32.shr_u
   i32.eqz
   if
-   i32.const 11168
+   i32.const 11312
    i32.const 8416
-   i32.const 194
+   i32.const 195
    i32.const 5
    call $~lib/builtins/abort
    unreachable
@@ -12711,9 +12727,9 @@
   call $~lib/near-sdk-core/env/env/env.storage_has_key
   i64.eqz
   if
-   i32.const 11248
+   i32.const 11392
    i32.const 8416
-   i32.const 195
+   i32.const 196
    i32.const 5
    call $~lib/builtins/abort
    unreachable
@@ -12730,9 +12746,9 @@
   call $~lib/string/String.__eq
   i32.eqz
   if
-   i32.const 11360
+   i32.const 11504
    i32.const 8416
-   i32.const 197
+   i32.const 198
    i32.const 5
    call $~lib/builtins/abort
    unreachable
@@ -12755,9 +12771,9 @@
   call $~lib/string/String.__eq
   i32.eqz
   if
-   i32.const 11472
+   i32.const 11616
    i32.const 8416
-   i32.const 201
+   i32.const 202
    i32.const 5
    call $~lib/builtins/abort
    unreachable
@@ -12801,16 +12817,16 @@
   local.set $1
   local.get $0
   i32.load
-  i32.const 11120
-  i32.const 11120
+  i32.const 11264
+  i32.const 11264
   call $~lib/util/hash/HASH<~lib/string/String>
   call $~lib/map/Map<~lib/string/String,~lib/assemblyscript-json/JSON/Value>#find
   if (result i32)
    local.get $0
-   i32.const 11120
+   i32.const 11264
    call $~lib/near-sdk-bindgen/index/decode<~lib/string/String,~lib/assemblyscript-json/JSON/Obj>
   else
-   i32.const 11120
+   i32.const 11264
    call $~lib/near-sdk-bindgen/index/requireParameter<~lib/string/String>
   end
   local.set $0
@@ -12818,9 +12834,9 @@
   i32.const 0
   i32.le_s
   if
-   i32.const 11600
+   i32.const 11744
    i32.const 8416
-   i32.const 205
+   i32.const 206
    i32.const 5
    call $~lib/builtins/abort
    unreachable
@@ -12833,9 +12849,9 @@
   i32.shr_u
   i32.eqz
   if
-   i32.const 11680
+   i32.const 11824
    i32.const 8416
-   i32.const 206
+   i32.const 207
    i32.const 5
    call $~lib/builtins/abort
    unreachable
@@ -12854,9 +12870,9 @@
   call $~lib/string/String.__eq
   i32.eqz
   if
-   i32.const 11760
+   i32.const 11904
    i32.const 8416
-   i32.const 208
+   i32.const 209
    i32.const 5
    call $~lib/builtins/abort
    unreachable
@@ -12867,9 +12883,9 @@
   call $~lib/string/String.__eq
   i32.eqz
   if
-   i32.const 11472
+   i32.const 11616
    i32.const 8416
-   i32.const 209
+   i32.const 210
    i32.const 5
    call $~lib/builtins/abort
    unreachable
@@ -13039,7 +13055,7 @@
  (func $~start
   (local $0 i32)
   (local $1 i32)
-  i32.const 12172
+  i32.const 12316
   global.set $~lib/rt/stub/offset
   i32.const 4
   i32.const 4
