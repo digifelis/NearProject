@@ -17,7 +17,7 @@ class Answers {
 const question = new PersistentMap<i32, Questions>("q");
 const answer = new PersistentMap<string, Answers>("a");
 const arr = new PersistentSet<i32>("c")
-const main_wallet: string = "dev-1649720425081-90941567068115";
+const main_wallet: string = "dev-1649797464228-49088638379844";
 var funding: u128 = u128.Zero;
 
 const ONE_NEAR = u128.from("1000000000000000000000000");
@@ -27,15 +27,6 @@ const last_question_number=  new PersistentSet<i32>("l");
 
 @nearBindgen
 export class Contract {
-  getCounter(): i32 {
-    return storage.getPrimitive<i32>("counter", 0);
-  }
-  lastQuestionNumber(): i32 {
-    const newCounter = storage.getPrimitive<i32>("counter", 0) + 1;
-    storage.set<i32>("counter", newCounter);
-    logging.log("Counter is now: " + newCounter.toString());
-    return newCounter;
-  }
 /* question functions */
   createQuestion(_question_id: i32, _question_file_hash: string, _question_payment_amount: string): boolean {
     assert(_question_id > 0, "Quesiton may not be blank" )
@@ -179,6 +170,17 @@ export class Contract {
      arr.delete(el)
   }
 
+  getCounter(): i32 {
+    return storage.getPrimitive<i32>("counter", 0);
+  }
+  lastQuestionNumber(): i32 {
+    const newCounter = storage.getPrimitive<i32>("counter", 0) + 1;
+    storage.set<i32>("counter", newCounter);
+    logging.log("Counter is now: " + newCounter.toString());
+    return newCounter;
+  }
 }
+
+
 
 
